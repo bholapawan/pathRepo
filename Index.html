@@ -15,7 +15,7 @@
             $("#Save").click(function () {
 
                 $.ajax({
-                    url: 'http://localhost:58828/api/Employee/Index',
+                    url: 'https://demoapppkb.azurewebsites.net/webapi/api/Employee/Index',
                     type: 'GET',
                     data: {},
                     dataType: 'json',
@@ -44,7 +44,7 @@
                 $.ajax({
                     contentType: 'application/json',
                     type: "POST",
-                    url: "http://localhost:58828/api/Employee/Create",
+                    url: "https://demoapppkb.azurewebsites.net/webapi/api/Employee/Create",
                     data: JSON.stringify({
                         name, gender, department, city
                     }),
